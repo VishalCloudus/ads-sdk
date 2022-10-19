@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/DILIP/Aug-2022/04-08-2022/Live Video Call/AdsSdk/src/main/res/layout/ad_progress_dialog.xml" value="0.25" />
+        <entry key="..\:/DILIP/Aug-2022/04-08-2022/Live Video Call/app/src/main/res/drawable/btn_next.xml" value="0.152" />
+        <entry key="..\:/DILIP/Aug-2022/04-08-2022/Live Video Call/app/src/main/res/drawable/connect_btn2.xml" value="0.152" />
+        <entry key="..\:/DILIP/Aug-2022/04-08-2022/Live Video Call/app/src/main/res/drawable/ic_baseline_location_on_24.xml" value="0.152" />
+        <entry key="..\:/DILIP/Aug-2022/04-08-2022/Live Video Call/app/src/main/res/drawable/ic_baseline_power_settings_new_24.xml" value="0.152" />
+        <entry key="..\:/DILIP/Aug-2022/04-08-2022/Live Video Call/app/src/main/res/drawable/ic_baseline_signal_cellular_alt_24_off.xml" value="0.152" />
+        <entry key="..\:/DILIP/Aug-2022/04-08-2022/Live Video Call/app/src/main/res/drawable/main_bg.xml" value="0.152" />
+        <entry key="..\:/DILIP/Aug-2022/04-08-2022/Live Video Call/app/src/main/res/drawable/white_rounded_bg.xml" value="0.152" />
+        <entry key="..\:/DILIP/Aug-2022/04-08-2022/Live Video Call/app/src/main/res/layout/activity_age.xml" value="0.15833333333333333" />
+        <entry key="..\:/DILIP/Aug-2022/04-08-2022/Live Video Call/app/src/main/res/layout/activity_all_permission.xml" value="0.15833333333333333" />
+        <entry key="..\:/DILIP/Aug-2022/04-08-2022/Live Video Call/app/src/main/res/layout/activity_gender.xml" value="0.15833333333333333" />
+        <entry key="..\:/DILIP/Aug-2022/04-08-2022/Live Video Call/app/src/main/res/layout/activity_hobby.xml" value="0.15833333333333333" />
+        <entry key="..\:/DILIP/Aug-2022/04-08-2022/Live Video Call/app/src/main/res/layout/activity_main.xml" value="0.15833333333333333" />
+        <entry key="..\:/DILIP/Aug-2022/04-08-2022/Live Video Call/app/src/main/res/layout/activity_mcq_actitivity.xml" value="0.15833333333333333" />
+        <entry key="..\:/DILIP/Aug-2022/04-08-2022/Live Video Call/app/src/main/res/layout/activity_mcq_actitivity2.xml" value="0.15833333333333333" />
+        <entry key="..\:/DILIP/Aug-2022/04-08-2022/Live Video Call/app/src/main/res/layout/activity_mcq_actitivity3.xml" value="0.15833333333333333" />
+        <entry key="..\:/DILIP/Aug-2022/04-08-2022/Live Video Call/app/src/main/res/layout/activity_mcq_actitivity4.xml" value="0.15833333333333333" />
+        <entry key="..\:/DILIP/Aug-2022/04-08-2022/Live Video Call/app/src/main/res/layout/activity_name.xml" value="0.15833333333333333" />
+        <entry key="..\:/DILIP/Aug-2022/04-08-2022/Live Video Call/app/src/main/res/layout/activity_one_connect_vpn.xml" value="0.15833333333333333" />
+        <entry key="..\:/DILIP/Aug-2022/04-08-2022/Live Video Call/app/src/main/res/layout/activity_permission1.xml" value="0.15833333333333333" />
+        <entry key="..\:/DILIP/Aug-2022/04-08-2022/Live Video Call/app/src/main/res/layout/activity_preconnecting.xml" value="0.15833333333333333" />
+        <entry key="..\:/DILIP/Aug-2022/04-08-2022/Live Video Call/app/src/main/res/layout/activity_prefered_age.xml" value="0.15833333333333333" />
+        <entry key="..\:/DILIP/Aug-2022/04-08-2022/Live Video Call/app/src/main/res/layout/activity_report.xml" value="0.15833333333333333" />
+        <entry key="..\:/DILIP/Aug-2022/04-08-2022/Live Video Call/app/src/main/res/layout/activity_startscreen.xml" value="0.15833333333333333" />
+        <entry key="..\:/DILIP/Aug-2022/04-08-2022/Live Video Call/app/src/main/res/layout/activity_vip.xml" value="0.15833333333333333" />
+        <entry key="..\:/DILIP/Aug-2022/04-08-2022/Live Video Call/app/src/main/res/layout/activity_web_call.xml" value="0.15833333333333333" />
+        <entry key="..\:/DILIP/Aug-2022/04-08-2022/Live Video Call/app/src/main/res/layout/common_native_layout.xml" value="0.15833333333333333" />
+        <entry key="..\:/DILIP/Aug-2022/04-08-2022/Live Video Call/app/src/main/res/layout/free_item.xml" value="0.15833333333333333" />
+        <entry key="..\:/DILIP/Aug-2022/04-08-2022/Live Video Call/app/src/main/res/layout/free_server.xml" value="0.15833333333333333" />
+        <entry key="..\:/DILIP/Aug-2022/04-08-2022/Live Video Call/app/src/main/res/layout/layout_banner.xml" value="0.15833333333333333" />
+        <entry key="..\:/DILIP/Aug-2022/04-08-2022/Live Video Call/app/src/main/res/layout/number_picker_material.xml" value="0.15833333333333333" />
+        <entry key="..\:/DILIP/Aug-2022/04-08-2022/Live Video Call/app/src/main/res/layout/pro_item.xml" value="0.15833333333333333" />
+        <entry key="..\:/DILIP/Aug-2022/04-08-2022/Live Video Call/app/src/main/res/layout/pro_server.xml" value="0.15833333333333333" />
+        <entry key="..\:/DILIP/Aug-2022/04-08-2022/Live Video Call/app/src/main/res/layout/progress_dialog.xml" value="0.15833333333333333" />
+        <entry key="..\:/DILIP/Aug-2022/04-08-2022/Live Video Call/app/src/main/res/layout/server_activity_main.xml" value="0.15833333333333333" />
+        <entry key="..\:/DILIP/Aug-2022/04-08-2022/Live Video Call/app/src/main/res/layout/vip_room_layout.xml" value="0.15833333333333333" />
+        <entry key="..\:/DILIP/Aug-2022/04-08-2022/Live Video Call/app/src/main/res/layout/waiting_dialog_lay.xml" value="0.15833333333333333" />
+        <entry key="..\:/DILIP/Aug-2022/04-08-2022/Live Video Call_com.livechat.friendvideo.calltalk/AdsSdk/src/main/res/layout/activity_ads_splash.xml" value="0.15833333333333333" />
+        <entry key="..\:/DILIP/Aug-2022/04-08-2022/Live Video Call_com.livechat.friendvideo.calltalk/app/src/main/res/layout/activity_age.xml" value="0.15833333333333333" />
+        <entry key="..\:/DILIP/Aug-2022/04-08-2022/Live Video Call_com.livechat.friendvideo.calltalk/app/src/main/res/layout/activity_calling.xml" value="0.15833333333333333" />
+        <entry key="..\:/DILIP/Aug-2022/04-08-2022/Live Video Call_com.livechat.friendvideo.calltalk/app/src/main/res/layout/activity_gender.xml" value="0.15833333333333333" />
+        <entry key="..\:/DILIP/Aug-2022/04-08-2022/Live Video Call_com.livechat.friendvideo.calltalk/app/src/main/res/layout/activity_hobby.xml" value="0.15833333333333333" />
+        <entry key="..\:/DILIP/Aug-2022/04-08-2022/Live Video Call_com.livechat.friendvideo.calltalk/app/src/main/res/layout/activity_main.xml" value="0.15833333333333333" />
+        <entry key="..\:/DILIP/Aug-2022/04-08-2022/Live Video Call_com.livechat.friendvideo.calltalk/app/src/main/res/layout/activity_mcq_actitivity.xml" value="0.15833333333333333" />
+        <entry key="..\:/DILIP/Aug-2022/04-08-2022/Live Video Call_com.livechat.friendvideo.calltalk/app/src/main/res/layout/activity_mcq_actitivity2.xml" value="0.15833333333333333" />
+        <entry key="..\:/DILIP/Aug-2022/04-08-2022/Live Video Call_com.livechat.friendvideo.calltalk/app/src/main/res/layout/activity_mcq_actitivity3.xml" value="0.15833333333333333" />
+        <entry key="..\:/DILIP/Aug-2022/04-08-2022/Live Video Call_com.livechat.friendvideo.calltalk/app/src/main/res/layout/activity_mcq_actitivity4.xml" value="0.15833333333333333" />
+        <entry key="..\:/DILIP/Aug-2022/04-08-2022/Live Video Call_com.livechat.friendvideo.calltalk/app/src/main/res/layout/activity_name.xml" value="0.15833333333333333" />
+        <entry key="..\:/DILIP/Aug-2022/04-08-2022/Live Video Call_com.livechat.friendvideo.calltalk/app/src/main/res/layout/activity_permission1.xml" value="0.15833333333333333" />
+        <entry key="..\:/DILIP/Aug-2022/04-08-2022/Live Video Call_com.livechat.friendvideo.calltalk/app/src/main/res/layout/activity_precation.xml" value="0.15833333333333333" />
+        <entry key="..\:/DILIP/Aug-2022/04-08-2022/Live Video Call_com.livechat.friendvideo.calltalk/app/src/main/res/layout/activity_prefered_age.xml" value="0.15833333333333333" />
+        <entry key="..\:/DILIP/Aug-2022/04-08-2022/Live Video Call_com.livechat.friendvideo.calltalk/app/src/main/res/layout/activity_privacy.xml" value="0.15833333333333333" />
+        <entry key="..\:/DILIP/Aug-2022/04-08-2022/Live Video Call_com.livechat.friendvideo.calltalk/app/src/main/res/layout/activity_report.xml" value="0.15833333333333333" />
+        <entry key="..\:/DILIP/Aug-2022/04-08-2022/Live Video Call_com.livechat.friendvideo.calltalk/app/src/main/res/layout/activity_splash.xml" value="0.15833333333333333" />
+        <entry key="..\:/DILIP/Aug-2022/04-08-2022/Live Video Call_com.livechat.friendvideo.calltalk/app/src/main/res/layout/activity_start.xml" value="0.15833333333333333" />
+        <entry key="..\:/DILIP/Aug-2022/04-08-2022/Live Video Call_com.livechat.friendvideo.calltalk/app/src/main/res/layout/activity_startscreen.xml" value="0.14" />
+        <entry key="..\:/DILIP/Aug-2022/04-08-2022/Live Video Call_com.livechat.friendvideo.calltalk/app/src/main/res/layout/activity_vip.xml" value="0.15833333333333333" />
+        <entry key="..\:/DILIP/Aug-2022/04-08-2022/Live Video Call_com.livechat.friendvideo.calltalk/app/src/main/res/layout/activity_web_call.xml" value="0.15833333333333333" />
+        <entry key="..\:/DILIP/Aug-2022/04-08-2022/Live Video Call_com.livechat.friendvideo.calltalk/app/src/main/res/layout/common_banner_layout.xml" value="0.15833333333333333" />
+        <entry key="..\:/DILIP/Aug-2022/04-08-2022/Live Video Call_com.livechat.friendvideo.calltalk/app/src/main/res/layout/common_native_layout.xml" value="0.15833333333333333" />
+        <entry key="..\:/DILIP/Aug-2022/04-08-2022/Live Video Call_com.livechat.friendvideo.calltalk/app/src/main/res/layout/custom__xrvl_progressbar.xml" value="0.15833333333333333" />
+        <entry key="..\:/DILIP/Aug-2022/04-08-2022/Live Video Call_com.livechat.friendvideo.calltalk/app/src/main/res/layout/dialog_report.xml" value="0.15833333333333333" />
+        <entry key="..\:/DILIP/Aug-2022/04-08-2022/Live Video Call_com.livechat.friendvideo.calltalk/app/src/main/res/layout/number_picker_material.xml" value="0.15833333333333333" />
+        <entry key="..\:/DILIP/Aug-2022/04-08-2022/Live Video Call_com.livechat.friendvideo.calltalk/app/src/main/res/layout/progress_dialog.xml" value="0.15833333333333333" />
+        <entry key="..\:/DILIP/Aug-2022/04-08-2022/Live Video Call_com.livechat.friendvideo.calltalk/app/src/main/res/layout/server_activity_main.xml" value="0.15833333333333333" />
+        <entry key="..\:/DILIP/Aug-2022/04-08-2022/Live Video Call_com.livechat.friendvideo.calltalk/app/src/main/res/layout/vip_room_layout.xml" value="0.15833333333333333" />
+        <entry key="..\:/DILIP/Aug-2022/04-08-2022/Live Video Call_com.livechat.friendvideo.calltalk/app/src/main/res/layout/waiting_dialog_lay.xml" value="0.15833333333333333" />
+        <entry key="..\:/DILIP/Aug-2022/04-08-2022/Live Video Call_com.livechat.friendvideo.calltalk/app/src/main/res/layout/wr_activity_chat_single.xml" value="0.15833333333333333" />
+        <entry key="..\:/DILIP/Aug-2022/04-08-2022/Live Video Call_com.livechat.friendvideo.calltalk/app/src/main/res/layout/wr_fragment_room_control_single.xml" value="0.15833333333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

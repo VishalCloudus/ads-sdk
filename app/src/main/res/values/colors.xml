@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_500">#1997EE</color>
+    <color name="purple_700">#1667D3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="tvColor">#1773DA</color>
+    <color name="sky">#166DD7</color>
+    <color name="webrtc_colorPrimary">#242424</color>
+    <color name="webrtc_colorPrimaryDark">#242424</color>
+    <color name="webrtc_colorAccent">#242424</color>
+
+</resources>
