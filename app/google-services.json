@@ -1,0 +1,469 @@
+{
+  "project_info": {
+    "project_number": "953273704541",
+    "project_id": "cloudus-management-22",
+    "storage_bucket": "cloudus-management-22.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:953273704541:android:e863b300670b104e042db4",
+        "android_client_info": {
+          "package_name": "com.bonlive.random.livetalk.videocall"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "953273704541-9dcqpcg0gjo6t4op5vqmffugkh4sipgj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCazFj02668MGsUUVcXrQ83A3SeHY6GV-I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "953273704541-9dcqpcg0gjo6t4op5vqmffugkh4sipgj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:953273704541:android:4dab166e723b7a2a042db4",
+        "android_client_info": {
+          "package_name": "com.cloudstar.notepad.apps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "953273704541-9dcqpcg0gjo6t4op5vqmffugkh4sipgj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCazFj02668MGsUUVcXrQ83A3SeHY6GV-I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "953273704541-9dcqpcg0gjo6t4op5vqmffugkh4sipgj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:953273704541:android:967bc03b0b29325d042db4",
+        "android_client_info": {
+          "package_name": "com.dreams.sweetdream.sleepsounds"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "953273704541-9dcqpcg0gjo6t4op5vqmffugkh4sipgj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCazFj02668MGsUUVcXrQ83A3SeHY6GV-I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "953273704541-9dcqpcg0gjo6t4op5vqmffugkh4sipgj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:953273704541:android:8fc4625c9558bae0042db4",
+        "android_client_info": {
+          "package_name": "com.friends.random.live.talk.chat.stranger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "953273704541-9dcqpcg0gjo6t4op5vqmffugkh4sipgj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCazFj02668MGsUUVcXrQ83A3SeHY6GV-I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "953273704541-9dcqpcg0gjo6t4op5vqmffugkh4sipgj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:953273704541:android:09b7364f0312ead8042db4",
+        "android_client_info": {
+          "package_name": "com.hoffy.chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "953273704541-9dcqpcg0gjo6t4op5vqmffugkh4sipgj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCazFj02668MGsUUVcXrQ83A3SeHY6GV-I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "953273704541-9dcqpcg0gjo6t4op5vqmffugkh4sipgj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:953273704541:android:f9d0586f7cf98841042db4",
+        "android_client_info": {
+          "package_name": "com.indiangirlsvideocall.livetalk.friendchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "953273704541-9dcqpcg0gjo6t4op5vqmffugkh4sipgj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCazFj02668MGsUUVcXrQ83A3SeHY6GV-I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "953273704541-9dcqpcg0gjo6t4op5vqmffugkh4sipgj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:953273704541:android:31cd16101776717e042db4",
+        "android_client_info": {
+          "package_name": "com.livechat.friendvideo.calltalk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "953273704541-9dcqpcg0gjo6t4op5vqmffugkh4sipgj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCazFj02668MGsUUVcXrQ83A3SeHY6GV-I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "953273704541-9dcqpcg0gjo6t4op5vqmffugkh4sipgj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:953273704541:android:7465efaf185e22cc042db4",
+        "android_client_info": {
+          "package_name": "com.livetalk.friendchat.randomvideocall.freevideochat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "953273704541-9dcqpcg0gjo6t4op5vqmffugkh4sipgj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCazFj02668MGsUUVcXrQ83A3SeHY6GV-I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "953273704541-9dcqpcg0gjo6t4op5vqmffugkh4sipgj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:953273704541:android:039df556614a0f72042db4",
+        "android_client_info": {
+          "package_name": "com.lopo.lite.videochat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "953273704541-9dcqpcg0gjo6t4op5vqmffugkh4sipgj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCazFj02668MGsUUVcXrQ83A3SeHY6GV-I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "953273704541-9dcqpcg0gjo6t4op5vqmffugkh4sipgj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:953273704541:android:f2ab24cc3095d12e042db4",
+        "android_client_info": {
+          "package_name": "com.pulse.livetalk.randomvideocall.videochat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "953273704541-9dcqpcg0gjo6t4op5vqmffugkh4sipgj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCazFj02668MGsUUVcXrQ83A3SeHY6GV-I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "953273704541-9dcqpcg0gjo6t4op5vqmffugkh4sipgj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:953273704541:android:c96b1b8f20315c22042db4",
+        "android_client_info": {
+          "package_name": "com.randomvideocall.friendchat.livetalk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "953273704541-9dcqpcg0gjo6t4op5vqmffugkh4sipgj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCazFj02668MGsUUVcXrQ83A3SeHY6GV-I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "953273704541-9dcqpcg0gjo6t4op5vqmffugkh4sipgj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:953273704541:android:4f20227534d141ca042db4",
+        "android_client_info": {
+          "package_name": "com.swishapp.randomvideo.livecall.randomchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "953273704541-9dcqpcg0gjo6t4op5vqmffugkh4sipgj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCazFj02668MGsUUVcXrQ83A3SeHY6GV-I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "953273704541-9dcqpcg0gjo6t4op5vqmffugkh4sipgj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:953273704541:android:4379c346e0a4b18c042db4",
+        "android_client_info": {
+          "package_name": "com.vidlee.chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "953273704541-9dcqpcg0gjo6t4op5vqmffugkh4sipgj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCazFj02668MGsUUVcXrQ83A3SeHY6GV-I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "953273704541-9dcqpcg0gjo6t4op5vqmffugkh4sipgj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:953273704541:android:0555d10fc720b11a042db4",
+        "android_client_info": {
+          "package_name": "com.wave.friendchatcall.randomvideocall"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "953273704541-1j127rtbkrqhqq737oaiqlr3v46mdjae.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.wave.friendchatcall.randomvideocall",
+            "certificate_hash": "515315a993bb8eb38f37dc9b756984a64983220b"
+          }
+        },
+        {
+          "client_id": "953273704541-bc1jn92te5o11du3591eqokm3ja4p35n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.wave.friendchatcall.randomvideocall",
+            "certificate_hash": "d9ab74215b61c2dfd3e1611a52777a7a257f9b79"
+          }
+        },
+        {
+          "client_id": "953273704541-9dcqpcg0gjo6t4op5vqmffugkh4sipgj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCazFj02668MGsUUVcXrQ83A3SeHY6GV-I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "953273704541-9dcqpcg0gjo6t4op5vqmffugkh4sipgj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:953273704541:android:df179bc79d3d453d042db4",
+        "android_client_info": {
+          "package_name": "com.zolpan.chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "953273704541-qrf6uvd7b6vsss9gin4mn4dd9q7isll6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.zolpan.chat",
+            "certificate_hash": "acaded47e54c0cf81d2e3f82f40d38f8c0fd3b26"
+          }
+        },
+        {
+          "client_id": "953273704541-9dcqpcg0gjo6t4op5vqmffugkh4sipgj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCazFj02668MGsUUVcXrQ83A3SeHY6GV-I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "953273704541-9dcqpcg0gjo6t4op5vqmffugkh4sipgj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

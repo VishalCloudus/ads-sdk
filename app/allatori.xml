@@ -1,0 +1,255 @@
+<!--<config>-->
+<!--    <input>-->
+
+<!--        <dir in="${classesRoot}" out="${classesRoot}-obfuscated" />-->
+<!--&lt;!&ndash;        <dir in="${kotlinRoot}" out="${kotlinRoot}-obfuscated" />&ndash;&gt;-->
+<!--    </input>-->
+
+<!--    <classpath>-->
+<!--        <jar name="${androidJar}" />-->
+<!--        <jar name="${classpathJars}" />-->
+<!--    </classpath>-->
+
+<!--    <keep-names>-->
+<!--        <class template="public class * instanceof android.app.Activity">-->
+<!--            <method template="public void *(android.view.View)" />-->
+<!--        </class>-->
+<!--        <class template="public class * instanceof android.view.View">-->
+<!--            <method template="void set*(**)" />-->
+<!--            <method template="get*()" />-->
+<!--        </class>-->
+<!--        <class template="class * extends java.lang.Enum">-->
+<!--            <method template="values()" />-->
+<!--            <method template="valueOf(java.lang.String)" />-->
+<!--        </class>-->
+<!--        <class template="class * implements android.os.Parcelable">-->
+<!--            <field template="public static final android.os.Parcelable*Creator *" />-->
+<!--        </class>-->
+<!--        <class template="class *.R*">-->
+<!--            <field template="public static *" />-->
+<!--        </class>-->
+<!--        <class template="public class * instanceof android.app.Application" />-->
+<!--        <class template="public class * instanceof android.app.Service" />-->
+<!--        <class template="public class * instanceof android.content.BroadcastReceiver" />-->
+<!--        <class template="public class * instanceof android.content.ContentProvider" />-->
+<!--        <class template="public class * instanceof android.app.backup.BackupAgentHelper" />-->
+<!--        <class template="public class * instanceof android.preference.Preference" />-->
+<!--        <class template="public class com.android.vending.licensing.ILicensingService" />-->
+<!--        <class template="public class com.google.android.vending.licensing.ILicensingService" />-->
+
+
+<!--        <class-->
+<!--            template="public class * instanceof com.saxrandom.chatwithvideo.live.talk.ApplicationSRV" />-->
+<!--        &lt;!&ndash;        <class template="public class * instanceof com.kv.hdwallpapers.activities.SplashActivity"/>&ndash;&gt;-->
+<!--        &lt;!&ndash;        <class template="public class * instanceof com.kv.hdwallpapers.activities.SettingActivity"/>&ndash;&gt;-->
+<!--        &lt;!&ndash;        <class template="public class * instanceof com.kv.hdwallpapers.activities.AdActivity"/>&ndash;&gt;-->
+<!--        &lt;!&ndash;        <class template="public class * instanceof com.kv.hdwallpapers.activities.MyLWPSettingsActivity"/>&ndash;&gt;-->
+<!--        &lt;!&ndash;        <class template="public class * instanceof com.kv.hdwallpapers.activities.PictureActivity"/>&ndash;&gt;-->
+<!--        &lt;!&ndash;        <class template="public class * instanceof com.kv.hdwallpapers.activities.SetWallpaperActivity"/>&ndash;&gt;-->
+<!--        &lt;!&ndash;        <class template="public class * instanceof com.kv.hdwallpapers.activities.SettingFragment"/>&ndash;&gt;-->
+<!--        &lt;!&ndash;        <class template="public class * instanceof com.kv.hdwallpapers.adapter.*"/>&ndash;&gt;-->
+
+
+<!--        <class template="class *Application*">-->
+<!--            <field access="protected+" />-->
+<!--            <method access="protected+" />-->
+<!--        </class>-->
+<!--        <class template="class *Activity*">-->
+<!--            <field access="protected+" />-->
+<!--            <method access="protected+" />-->
+<!--        </class>-->
+
+<!--        &lt;!&ndash;        <class access="protected+">&ndash;&gt;-->
+<!--        &lt;!&ndash;            <field access="protected+" />&ndash;&gt;-->
+<!--        &lt;!&ndash;            <method access="protected+" />&ndash;&gt;-->
+<!--        &lt;!&ndash;        </class>&ndash;&gt;-->
+
+<!--    </keep-names>-->
+
+<!--    <property name="string-encryption" value="disable"/>-->
+<!--    <property name="log-file" value="${logFile}" />-->
+<!--    <property name="skip-renaming" value="enable" />-->
+
+
+<!--</config>-->
+
+<config>
+    <input>
+        <dir in="${classesRoot}" out="${classesRoot}-obfuscated" />
+        <dir in="${kotlinRoot}" out="${kotlinRoot}-obfuscated" />
+    </input>
+
+    <classpath>
+        <jar name="${androidJar}" />
+        <jar name="${classpathJars}" />
+    </classpath>
+
+    <keep-names>
+        <class stop="true" template="class com.company.abc.*" />
+        <class stop="true" template="class androidx.databinding.library.baseAdapters.*" />
+        <class stop="true" template="class androidx.databinding.library.baseAdapters.BR" />
+        <class stop="true" template="class androidx.databinding.library.*" />
+        <class stop="true" template="class retrofit2.converter.gson.*" />
+        <class stop="true" template="class retrofit2.*" />
+        <class stop="true" template="public class retrofit2.converter.gson.*" />
+        <class stop="true" template="public class retrofit2.*" />
+        <class stop="true" template="public class retrofit2.converter.gson.*" />
+        <class stop="true" template="public class com.airbnb.lottie.*" />
+        <class stop="true" template="public class com.appexecutors.picker.*" />
+        <class stop="true" template="public class com.bolaware.viewstimerstory.*" />
+        <class stop="true" template="public class com.theartofdev.edmodo.cropper.*" />
+
+        <class template="public class * instanceof androidx.appcompat.app.AppCompatActivity">
+            <method template="public void *(android.view.View)" />
+        </class>
+
+        <class access="protected+">
+            <field access="protected+" />
+            <method access="protected+" />
+        </class>
+
+        <class template="class * extends java.lang.Enum">
+            <method template="values()" />
+            <method template="valueOf(java.lang.String)" />
+        </class>
+        <class template="class * implements android.os.Parcelable">
+            <field template="public static final android.os.Parcelable*Creator *" />
+        </class>
+        <class template="class *.R*">
+            <field template="public static *" />
+        </class>
+        <!--        <class template="class com.logo.design.image.template.text.maker.New_Model_LGM.*">-->
+        <!--            <field template="*" />-->
+        <!--            <method template="*(**)" />-->
+        <!--        </class>-->
+
+        <class template="public class * instanceof android.view.View">
+            <method template="void set*(**)" />
+            <method template="get*()" />
+        </class>
+
+
+        <class template="public class *" />
+        <!--                <class template="public class * instanceof com.kv.hdwallpapers.activities.MainActivity"/>-->
+        <class template="public class * instanceof com.livechat.friendvideo.calltalk.activity.Web_Call_Activity" />
+        <class template="public class * instanceof com.livechat.friendvideo.calltalk.activity.SplashActivity" />
+        <class template="public class * instanceof com.livechat.friendvideo.calltalk.activity.StartScreenActivity" />
+        <class template="public class * instanceof com.livechat.friendvideo.calltalk.activity.ReportActivity" />
+        <class template="public class * instanceof com.livechat.friendvideo.calltalk.activity.PreconnectingActivity" />
+        <!--        <class template="public class * instanceof com.kv.hdwallpapers.activities.SplashActivity"/>-->
+        <!--        <class template="public class * instanceof com.kv.hdwallpapers.activities.SettingActivity"/>-->
+        <!--        <class template="public class * instanceof com.kv.hdwallpapers.activities.AdActivity"/>-->
+        <!--        <class template="public class * instanceof com.kv.hdwallpapers.activities.MyLWPSettingsActivity"/>-->
+        <!--        <class template="public class * instanceof com.kv.hdwallpapers.activities.PictureActivity"/>-->
+        <!--        <class template="public class * instanceof com.kv.hdwallpapers.activities.SetWallpaperActivity"/>-->
+        <!--        <class template="public class * instanceof com.kv.hdwallpapers.activities.SettingFragment"/>-->
+        <!--        <class template="public class * instanceof com.kv.hdwallpapers.adapter.*"/>-->
+    </keep-names>
+
+
+    <!--{ DO NOT CHANGE ANY PROPERTY AND VALUES}-->
+
+    <!--    <property name="skip-renaming" value="enable" />-->
+    <!--LOGFILE*************************************************************************************************************-->
+    <property name="log-file" value="${logFile}" />
+    <!--********************************************************************************************************************-->
+
+    <!--LOGFILE*************************************************************************************************************-->
+    <property name="extensive-flow-obfuscation" value="maximum" />
+    <property name="control-flow-obfuscation" apply2class="class retrofit2.converter.gson.*"
+        value="disable" />
+    <property name="control-flow-obfuscation" apply2class="class retrofit2.*" value="disable" />
+    <!--    ********************************************UPDATE RESOURCE*****************************************************-->
+    <!--    <property name="update-resource-contents" value="enable" />-->
+    <!--********************************************************************************************************************-->
+
+
+    <!-- STRING ENCRYPTION**************************************************************************************************-->
+    <property name="remove-toString" value="enable" />
+    <property name="string-encryption-type" value="fast" />
+    <!--********************************************************************************************************************-->
+
+    <!--RANDOM SEED********************************************************************************************************-->
+    <property name="random-seed" value="hjkdhfidiyf" />
+    <!--********************************************************************************************************************-->
+
+    <!--REMOVE LOG**********************************************************************************************************-->
+    <property name="remove-calls" value="android.util.Log.*" />
+    <!--********************************************************************************************************************-->
+
+    <!--  ITS FILD REQUIRD COMPALSARY***************************************************************************************-->
+    <property name="output-jar-compression-level" value="9" />
+    <!-- *******************************************************************************************************************-->
+
+    <!-- FILD ENCRYPTED*****************************************************************************************************-->
+    <property name="fields-naming" value="iii" />
+    <!--    ****************************************************************************************************************-->
+
+
+    <!--VARIABLE ENCRYPTED**************************************************************************************************-->
+    <property name="local-variables-naming" value="remove" />
+    <!--********************************************************************************************************************-->
+
+
+    <!--CONTROL FLOW ENCRYPTED**********************************************************************************************-->
+    <property name="control-flow-obfuscation" value="enable" />
+    <!--********************************************************************************************************************-->
+
+    <!--CLASS NAME**********************************************************************************************************-->
+    <property name="classes-naming" value="iii" />
+    <!--********************************************************************************************************************-->
+
+    <!--CLASS NAME**********************************************************************************************************-->
+    <property name="fields-naming-prefix"
+        value="IIiiIiIIIIiiiiIIIIiiiiIIiiiIIiiiIIiiiIiiiiiiiiiIIIiIiIIIiIIIIIIIiIIIIiIIiiiiiiIIiiIi" />
+    <!--********************************************************************************************************************-->
+
+    <!--DEFUALT PACKAGE ****************************************************************************************************-->
+    <property name="default-package" value="IIiiiiIIIIiii.IIIIiiiiiIII.iiiiIiiIIIIiiIiii" />
+    <property name="packages-naming" value="abc" />
+    <property name="force-default-package" value="enable" />
+    <property name="classes-naming-prefix"
+        value="IIiiIiIIIIiiiiIIIIiiiiIIiiiIIiiiIIiiiIiiiiiiiiiIIIiIiIIIiIIIIIIIiIIIIiIIiiiiiiIIiiIi" />
+    <!-- *******************************************************************************************************************-->
+
+    <!--UPDATE RESOURCE NAME************************************************************************************************-->
+    <property name="update-resource-names" value="enable" />
+    <!--********************************************************************************************************************-->
+
+    <!--UPDATE RESOURCE CONTENTS********************************************************************************************-->
+    <property name="update-resource-contents" value="enable:UTF-8" />
+    <!--********************************************************************************************************************-->
+
+    <!--METHOD NAME STYLE **************************************************************************************************-->
+    <property name="methods-naming" value="iii" />
+    <!--    ****************************************************************************************************************-->
+
+    <!--LINE NUMBER OBFUSCATE***********************************************************************************************-->
+    <property name="line-numbers" value="obfuscate" />
+    <!--********************************************************************************************************************-->
+
+
+    <!--MEMBER RECORD RANDOME***********************************************************************************************-->
+    <property name="member-reorder" value="enable" />
+    <!--********************************************************************************************************************-->
+
+    <!--UTILS***************************************************************************************************************-->
+    <property name="finalize" value="enable" />
+    <!--********************************************************************************************************************-->
+
+    <!--SYNTHEIZE METHOD****************************************************************************************************-->
+    <property name="synthetize-methods" value="package" />
+    <!--********************************************************************************************************************-->
+
+    <!--    <property name="log-file" value="${logFile}"/>-->
+    <!--&lt;!&ndash;    <property name="extensive-flow-obfuscation" value="maximum"/>&ndash;&gt;-->
+    <!--    <property name="string-encryption-type" value="strong"/>-->
+    <!--    <property name="force-default-package" value="enable"/>-->
+    <!--    <property name="update-resource-contents" value="enable:UTF-8"/>-->
+    <!--    <property name="remove-toString" value="enable"/>-->
+    <!--    <property name="remove-calls" value="android.util.Log.*"/>-->
+    <!--    <property name="output-jar-compression-level" value="9"/>-->
+
+    <!--    <property name="generics" value="remove"/>-->
+    <property name="inner-classes" value="remove" />
+</config>

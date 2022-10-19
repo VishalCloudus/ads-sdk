@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Live Video Call</string>
+
+
+    <string name="facebook_app_id">5408284089265301</string>
+    <string name="fb_login_protocol__snlv_scheme">fb5408284089265301</string>
+    <string name="facebook_client_token">31e4719e16d38707901cd7974feb60e5</string>
+
+
+    <string name="onesignal_app_id">cc405935-37a4-4793-855e-f928d2e8deb4</string>
+
+
+    <string name="terms_of_service"><u>Terms of Service</u></string>
+    <string name="privacy_policy"><u>Privacy Policy</u></string>
+    <string name="by_continue_you_agree_to_our">By continue, you are Indicating that you Accept our </string>
+
+    <string name="your_highest_qualification">Your Highest Qualification ?</string>
+    <string name="bachelors">Bachelors</string>
+    <string name="masters">Masters</string>
+    <string name="phd">PHD</string>
+    <string name="post_doc">Post Doc</string>
+    <string name="other">Other</string>
+
+    <string name="your_drinking_habits">Your Drinking habits ?</string>
+    <string name="regular">Regular</string>
+    <string name="planning_to_quit">Planning to quit</string>
+    <string name="socially">Socially</string>
+    <string name="occasionally">Occasionally</string>
+    <string name="teetotaler">Teetotaler</string>
+
+    <string name="smoking">Are you smoking ?</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="planning_to_quit2">Planning to quit</string>
+
+    <string name="your_status">What your Status ?</string>
+    <string name="single">Single</string>
+    <string name="single_with_kids">Single with Kids</string>
+    <string name="divorced">Divorced</string>
+    <string name="divorced_with_kids">Divorced with Kids</string>
+    <string name="widowed">Widowed</string>
+    <string name="widowed_with_kids">Widowed with Kids</string>
+    <string name="separated">Separated</string>
+    <string name="separated_with_kids">Separated with Kids</string>
+
+</resources>
