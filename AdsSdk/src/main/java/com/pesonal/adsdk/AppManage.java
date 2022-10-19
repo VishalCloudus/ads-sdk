@@ -1252,7 +1252,6 @@ public class AppManage {
             }
         }
         editor_count.commit();
-//comemmenc
         ArrayList<String> placemnt_Ids = new ArrayList<String>();
         for (int i = 0; i < platform_Format_Ids.length; i++) {
             if (!platform_Format_Ids[i].isEmpty()) {
