@@ -1,4 +1,4 @@
-package com.livechat.friendvideo.calltalk.VPN;
+package com.pesonal.adsdk.vpn;
 
 
 

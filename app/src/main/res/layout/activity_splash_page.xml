@@ -27,7 +27,8 @@
             android:gravity="center"
             android:text="New Splash"
             android:textColor="@color/white"
-            android:textSize="@dimen/_20sdp" />
+            android:textSize="@dimen/_20sdp"
+            android:visibility="gone" />
 
         <ProgressBar
             android:layout_width="35dp"

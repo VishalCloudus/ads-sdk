@@ -151,7 +151,6 @@ public class ADS_SplashActivity extends AppCompatActivity {
             e.printStackTrace();
         }
 
-
         final String sdfsdf;
         if (BuildConfig.DEBUG) {
             sdfsdf = "TRSOFTAG12789I";

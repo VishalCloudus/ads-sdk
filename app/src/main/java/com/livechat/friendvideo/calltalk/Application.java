@@ -12,11 +12,10 @@ import androidx.appcompat.app.AppCompatDelegate;
 import com.facebook.FacebookSdk;
 import com.facebook.LoggingBehavior;
 import com.facebook.appevents.AppEventsLogger;
-import com.livechat.friendvideo.calltalk.VPN.VpnMainActivity;
 import com.livechat.friendvideo.calltalk.activity.StartScreenActivity;
-import com.livechat.friendvideo.calltalk.activity.splash.VpnUtilitiys;
 import com.onesignal.OSNotificationOpenedResult;
 import com.onesignal.OneSignal;
+import com.pesonal.adsdk.vpn.VpnUtilitiys;
 
 
 public class Application extends android.app.Application {

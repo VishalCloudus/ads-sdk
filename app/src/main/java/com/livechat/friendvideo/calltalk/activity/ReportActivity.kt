@@ -6,11 +6,11 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
 import com.livechat.friendvideo.calltalk.R
-import com.livechat.friendvideo.calltalk.VPN.DialogVpn
 import com.livechat.friendvideo.calltalk.api.model.room
 import com.livechat.friendvideo.calltalk.api.retrofit.ApiUtils
 import com.livechat.friendvideo.calltalk.extras.Constants
 import com.pesonal.adsdk.AppManage
+import com.pesonal.adsdk.vpn.DialogVpn
 import com.preference.PowerPreference
 import kotlinx.android.synthetic.main.activity_report.*
 import retrofit2.Call

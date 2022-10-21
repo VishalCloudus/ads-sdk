@@ -8,14 +8,22 @@ plugins {
 
 android {
 
+    signingConfigs {
+        release {
+            storeFile file('D:\\Office_Work\\Dilip\\Live Video Call\\android.jks')
+            storePassword 'android'
+            keyAlias 'android'
+            keyPassword 'android'
+        }
+    }
     compileSdkVersion 32
     buildToolsVersion "30.0.3"
     defaultConfig {
         applicationId "com.livechat.friendvideo.calltalk"
         minSdkVersion 21
         targetSdkVersion 32
-        versionCode 11
-        versionName "1.10"
+        versionCode 12
+        versionName "1.11"
         multiDexEnabled true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
@@ -50,6 +58,7 @@ android {
         buildFeatures {
             dataBinding true
         }
+        signingConfig signingConfigs.release
 
     }
 
@@ -81,7 +90,7 @@ android {
 
     applicationVariants.all { variant ->
         variant.javaCompileProvider.get().doLast {
-//            runSecurity(variant)
+            runSecurity(variant)
         }
     }
 }

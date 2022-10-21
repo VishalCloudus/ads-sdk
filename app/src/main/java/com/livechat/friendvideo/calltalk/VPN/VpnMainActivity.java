@@ -1,4 +1,5 @@
 package com.livechat.friendvideo.calltalk.VPN;
+/*
 
 import android.content.Context;
 import android.content.Intent;
@@ -47,7 +48,9 @@ import java.util.Random;
 
 public class VpnMainActivity extends AppCompatActivity{
     private String vpnselectcountry = "";
-    /*Get Country List*/
+    */
+/*Get Country List*//*
+
     private String countryName = "de,no,hk,ru,ch,bg,jp,dk,mx,it,ua,fr,es,br,se,au,sg,cz,gb,ie,ro,ca,tr,nl,us";
     private String countryServer = "38,14,24,8,10,6,16,12,2,10,8,30,12,14,12,12,27,8,26,8,10,140,6,28,18";
     ArrayList<String> country_list;
@@ -113,4 +116,4 @@ public class VpnMainActivity extends AppCompatActivity{
 
 
 
-}
+}*/

@@ -1,4 +1,4 @@
-package com.livechat.friendvideo.calltalk.activity.splash
+package com.pesonal.adsdk.vpn
 
 import android.app.Activity
 import android.app.Dialog
@@ -24,16 +24,10 @@ import com.anchorfree.sdk.*
 import com.anchorfree.vpnsdk.callbacks.Callback
 import com.anchorfree.vpnsdk.callbacks.CompletableCallback
 import com.anchorfree.vpnsdk.exceptions.VpnException
-import com.livechat.friendvideo.calltalk.BuildConfig
-import com.livechat.friendvideo.calltalk.R
-import com.livechat.friendvideo.calltalk.VPN.ConstVpn
-import com.livechat.friendvideo.calltalk.VPN.Countries
-import com.livechat.friendvideo.calltalk.api.retrofit.ApiClient
-import com.livechat.friendvideo.calltalk.extras.Constants
 import com.northghost.caketube.OpenVpnTransportConfig
 import com.pesonal.adsdk.AppManage
-import com.pesonal.adsdk.AppPreferenceVpn
 import com.pesonal.adsdk.OnCountryListener
+import com.pesonal.adsdk.R
 import com.preference.PowerPreference
 import java.util.*
 

@@ -1,4 +1,4 @@
-package com.livechat.friendvideo.calltalk.VPN;
+package com.pesonal.adsdk.vpn;
 
 import static com.pesonal.adsdk.AppManage.ADMOB_N;
 
@@ -13,24 +13,17 @@ import android.net.NetworkInfo;
 import android.os.Build;
 import android.util.Log;
 
-import androidx.annotation.NonNull;
-
 import com.anchorfree.partner.api.ClientInfo;
-import com.anchorfree.partner.api.auth.AuthMethod;
-import com.anchorfree.partner.api.response.User;
 import com.anchorfree.sdk.HydraTransportConfig;
 import com.anchorfree.sdk.NotificationConfig;
 import com.anchorfree.sdk.TransportConfig;
 import com.anchorfree.sdk.UnifiedSDK;
 import com.anchorfree.sdk.UnifiedSDKConfig;
-import com.anchorfree.vpnsdk.callbacks.Callback;
 import com.anchorfree.vpnsdk.callbacks.CompletableCallback;
-import com.anchorfree.vpnsdk.exceptions.VpnException;
-import com.livechat.friendvideo.calltalk.BuildConfig;
-import com.livechat.friendvideo.calltalk.R;
 import com.northghost.caketube.OpenVpnTransportConfig;
 import com.pesonal.adsdk.AppManage;
 import com.pesonal.adsdk.AppPreferenceVpn;
+import com.pesonal.adsdk.R;
 
 import java.util.ArrayList;
 import java.util.List;

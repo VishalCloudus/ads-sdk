@@ -1,4 +1,5 @@
 package com.livechat.friendvideo.calltalk.activity;
+/*
 
 import android.app.Activity;
 import android.app.Dialog;
@@ -8,7 +9,6 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
-import android.content.SharedPreferences;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.graphics.drawable.ColorDrawable;
@@ -40,11 +40,8 @@ import com.anchorfree.vpnsdk.callbacks.Callback;
 import com.anchorfree.vpnsdk.exceptions.VpnException;
 import com.anchorfree.vpnsdk.vpnservice.VPNState;
 import com.livechat.friendvideo.calltalk.R;
-import com.livechat.friendvideo.calltalk.VPN.ConstVpn;
-import com.livechat.friendvideo.calltalk.VPN.Countries;
 import com.livechat.friendvideo.calltalk.VPN.VpnBaseActivity;
 import com.livechat.friendvideo.calltalk.VPN.VpnMainActivity;
-import com.livechat.friendvideo.calltalk.VPN.VpnSplashActivity;
 import com.livechat.friendvideo.calltalk.extras.Constants;
 import com.pesonal.adsdk.ADS_SplashActivity;
 import com.pesonal.adsdk.AppManage;
@@ -332,7 +329,9 @@ public class SplashActivity extends VpnBaseActivity {
         alert.show();
     }
 
-    /*==================================== ONE CONNECT VPN CODE====================================*/
+    */
+/*==================================== ONE CONNECT VPN CODE====================================*//*
+
     public static String STATUS = "DISCONNECTED";
     public Countries selectedCountry = null;
     public static OpenVPNThread vpnThread = new OpenVPNThread();
@@ -527,9 +526,13 @@ public class SplashActivity extends VpnBaseActivity {
         super.onDestroy();
     }
 
-    /*================================= END ONE CONNECT VPN CODE =============================*/
+    */
+/*================================= END ONE CONNECT VPN CODE =============================*//*
 
-    /*==================================== HYDRA VPN CODE====================================*/
+
+    */
+/*==================================== HYDRA VPN CODE====================================*//*
+
 
     boolean connected = false;
     private Timer timer = new Timer();
@@ -783,6 +786,9 @@ public class SplashActivity extends VpnBaseActivity {
             MoveToNextActivity();
         }
     }
-    /*====================================END HYDRA VPN CODE====================================*/
+    */
+/*====================================END HYDRA VPN CODE====================================*//*
+
 
 }
+*/

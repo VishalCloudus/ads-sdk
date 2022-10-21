@@ -1,6 +1,9 @@
 package com.livechat.friendvideo.calltalk;
 
+import static android.content.ContentValues.TAG;
+
 import android.app.Dialog;
+import android.content.ContentValues;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Color;
@@ -173,13 +176,14 @@ public class Web_Call_Activity extends AppCompatActivity implements Handler.Call
         userId = new Random().nextInt(999999999);
 
         if (AppManage.app_rtc_url != null && !AppManage.app_rtc_url.isEmpty()) {
+            Log.e(TAG, "web call api call " );
             new ApiUtils().getWebService(AppManage.app_rtc_url).getVideo(
                     PowerPreference.getDefaultFile()
                             .getString(Constants.AppRtcWebOnline),
                     userId, "", "a").enqueue(new Callback<room>() {
                 @Override
                 public void onResponse(@NonNull Call<room> call, @NonNull Response<room> response) {
-                    Log.e("====", "onResponse: " + response);
+                    Log.e(TAG, "web api success onResponse: " + response);
                     if (response.body() != null) {
                         Log.e("====", "onResponse: 1 " + response.body().getFlag());
                         channel = response.body().getChannel();
@@ -207,13 +211,13 @@ public class Web_Call_Activity extends AppCompatActivity implements Handler.Call
                             }, Long.parseLong(AppManage.WebConnectingSecond) * 1000);
                         }
                     } else {
-                        Log.e("====", "onResponse: body is null");
+                        Log.e(TAG, "web api onResponse: body is null");
                     }
                 }
 
                 @Override
                 public void onFailure(@NonNull Call<room> call, @NonNull Throwable t) {
-                    Log.e("====", "onFailure: " + t.getMessage());
+                    Log.e(TAG, "web api onFailure: " + t.getMessage());
                 }
             });
         } else {

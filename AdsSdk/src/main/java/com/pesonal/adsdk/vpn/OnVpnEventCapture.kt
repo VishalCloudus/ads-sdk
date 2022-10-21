@@ -1,4 +1,4 @@
-package com.livechat.friendvideo.calltalk.activity.splash
+package com.pesonal.adsdk.vpn
 
 interface OnVpnEventCapture {
     fun onNextPageJump()

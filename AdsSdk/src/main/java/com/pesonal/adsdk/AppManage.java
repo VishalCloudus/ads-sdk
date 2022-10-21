@@ -83,6 +83,8 @@ import com.google.android.gms.ads.interstitial.InterstitialAd;
 import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback;
 import com.google.android.gms.ads.nativead.NativeAd;
 import com.google.android.gms.ads.nativead.NativeAdView;
+import com.pesonal.adsdk.vpn.Constants;
+import com.preference.PowerPreference;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -96,7 +98,6 @@ import java.util.Locale;
 import java.util.Map;
 
 import retrofit2.Call;
-
 
 public class AppManage {
     public static AppPreferenceVpn appPreferenceVpn;
@@ -137,7 +138,6 @@ public class AppManage {
     public static String app_termsServieLink = "";
     public static String app_privacyPolicyLink = "";
 
-
     public static String native_scroll_show = "";
     public static String open_ad_interstitial_Specific_flag = "";
     public static String main_data_url = "";
@@ -163,6 +163,9 @@ public class AppManage {
     public static int app_adShowStatus = 1;
     public static int app_mainClickCntSwAd = 0;
     public static int app_innerClickCntSwAd = 0;
+
+    //    admob_native_forcefully = 0 - show only if preloaded 1 - show add forcefully even not loaded load & display
+    public static int admob_native_forcefully = 1;
 
 
     public static String ADMOB_APPID = "";
@@ -486,23 +489,27 @@ public class AppManage {
     }
 
     public static void callCountryCodeApi(OnCountryListener onCountryListener) {
+        Log.e(TAG, "callCountryCodeApi: ");
         APIInterface ipInterface = APIClient.get_ip_clint().create(APIInterface.class);
         ipInterface.getipdata("json").enqueue(new retrofit2.Callback<Pro_IPModel>() {
             @Override
             public void onResponse(Call<Pro_IPModel> call, retrofit2.Response<Pro_IPModel> response) {
+                Log.e(TAG, "get country code onResponse: success");
                 if (response.isSuccessful() && response.body() != null) {
+                    Log.d("AAA", "country found : " + response.body().getCountryCode());
                     Pro_IPModel pro_ipModel = new Pro_IPModel();
                     pro_ipModel.setCountryCode(response.body().getCountryCode());
                     pro_ipModel.setCountry(response.body().getCountry());
                     onCountryListener.onCountryFound(response.body().getCountryCode());
                 } else {
                     onCountryListener.onCountryFound("");
+                    Log.d("AAA", "country found : ");
                 }
             }
 
             @Override
             public void onFailure(Call<Pro_IPModel> call, Throwable th) {
-                Log.d("kp_response121 ", "onfailure: failed");
+                Log.e(TAG, "country get onfailure: failed");
                 onCountryListener.onCountryFound("");
             }
         });
@@ -574,7 +581,6 @@ public class AppManage {
                         adFormatWiseAd.add(myAppMarketingList.get(i));
                     }
                 }
-
             }
         }
 
@@ -598,10 +604,7 @@ public class AppManage {
                 }
             }
         }
-
-
         return customAdModel;
-
     }
 
     public List<MoreApp_Data> get_SPLASHMoreAppData() {
@@ -804,16 +807,17 @@ public class AppManage {
 
             banner_on_off = settingsJsonObject.getString("banner_on_off");
             custome_banner = settingsJsonObject.getString("custome_banner");
+            custome_banner = "1";
 
             One_Onnect_API_Key = settingsJsonObject.getString("One_Onnect_API_Key");
 // one connect vpn coutry list
             One_Onnect_connect_vpn = settingsJsonObject.getString("One_Onnect_connect_vpn");
 // 0 - hydra vpn and  1 - one connect vpn
             Hydra_OneConnect = settingsJsonObject.getString("Hydra_OneConnect");
-            Hydra_OneConnect = "0";
+//            Hydra_OneConnect = "1";
 // ask vpn permission        0 - ask vpn permission in splash screen 1 - ask vpn permission on star button clickl
             splash_start_vpn = settingsJsonObject.getString("splash_start_vpn");
-            splash_start_vpn = "1";
+//            splash_start_vpn = "1";
 //             0 - don't start vpn 1 - start vpn
             vpn_flag = settingsJsonObject.getString("vpn_flag");
 //            vpn_flag = "1";
@@ -842,10 +846,60 @@ public class AppManage {
             app_adShowStatus = settingsJsonObject.getInt("app_adShowStatus");
             app_mainClickCntSwAd = settingsJsonObject.getInt("app_mainClickCntSwAd");
             app_innerClickCntSwAd = settingsJsonObject.getInt("app_innerClickCntSwAd");
+            admob_native_forcefully = settingsJsonObject.getInt("admob_native_forcefully");
+//            admob_native_forcefully = 0;
+            setupAdsDataToMyPref();
         } catch (Exception e) {
+            setupAdsDataToMyPref();
             Log.e("=====", "getResponseFromPref: " + e.getMessage());
         }
 
+    }
+
+    public static void setupAdsDataToMyPref() {
+        PowerPreference.getDefaultFile()
+                .setString(Constants.AppRtcWebOnline, AppManage.WebGenerateRoom);
+        PowerPreference.getDefaultFile()
+                .setString(Constants.AppRtcWebOffline, AppManage.WebDeleteRoom);
+        PowerPreference.getDefaultFile()
+                .setString(Constants.FLAG_NATIVE_SCROLL, AppManage.native_scroll_show);
+        PowerPreference.getDefaultFile().setString(Constants.MAIN_DATA_URL, AppManage.main_data_url);
+        PowerPreference.getDefaultFile().setString(Constants.REPORT_USER, AppManage.ReportUser);
+        PowerPreference.getDefaultFile().setString(Constants.DELETE_ROOM, AppManage.DeleteRoom);
+        PowerPreference.getDefaultFile().setString(Constants.GENERATE_ROOM, AppManage.GenerateRoom);
+        PowerPreference.getDefaultFile().setString(Constants.APP_RTC_URL, AppManage.app_rtc_url);
+        PowerPreference.getDefaultFile()
+                .setString(Constants.PRIVACY_POLICY, AppManage.app_privacyPolicyLink);
+        PowerPreference.getDefaultFile()
+                .setString(Constants.TERMS_OF_SERVICE, AppManage.app_termsServieLink);
+
+        PowerPreference.getDefaultFile()
+                .setString(Constants.VPN_Hydra_OneConnect, AppManage.Hydra_OneConnect);
+        PowerPreference.getDefaultFile()
+                .setString(Constants.VPN_LIST_ONECONNECT, AppManage.One_Onnect_connect_vpn);
+        PowerPreference.getDefaultFile().setString(Constants.VPN_LIST_HYDRA, AppManage.connect_vpn);
+        PowerPreference.getDefaultFile()
+                .setString(Constants.VPN_COUNTRY_NOT_USE, AppManage.country_list);
+        PowerPreference.getDefaultFile().setString(Constants.VPN_FORCE, AppManage.force_vpn);
+        PowerPreference.getDefaultFile()
+                .setString(Constants.VPN_FROM_SPLASH, AppManage.splash_start_vpn);
+        PowerPreference.getDefaultFile().setString(Constants.VPN_ON_OFF, AppManage.vpn_flag);
+        PowerPreference.getDefaultFile()
+                .setString(Constants.VPN_IGNORE_AFTER_SEC, AppManage.vpn_sec);
+        PowerPreference.getDefaultFile()
+                .setString(Constants.VPN_HYDRA_HOST, AppManage.vpn_base_host);
+        PowerPreference.getDefaultFile()
+                .setString(Constants.VPN_HYDRA_CARRIER_ID, AppManage.vpn_base_carrier_id);
+
+        //  oneConnectVpn
+        PowerPreference.getDefaultFile()
+                .setString(Constants.ONE_CONNECT_API_KEY, AppManage.One_Onnect_API_Key);
+
+        if (AppManage.app_adShowStatus == 0) {
+            PowerPreference.getDefaultFile().setBoolean(Constants.ADS_ONOFF, false);
+        } else {
+            PowerPreference.getDefaultFile().setBoolean(Constants.ADS_ONOFF, true);
+        }
     }
 
     private String implode(String[] placementList) {
@@ -1133,7 +1187,7 @@ public class AppManage {
                 // an ad is loaded.
                 state_admobinterestial = "Loaded";
                 mInterstitialAd = interstitialAd;
-                Log.i(TAG, "onAdLoaded");
+                Log.i(TAG, "admob interestial onAdLoaded");
 
                 mInterstitialAd.setFullScreenContentCallback(new FullScreenContentCallback() {
                     @Override
@@ -1168,7 +1222,7 @@ public class AppManage {
             public void onAdFailedToLoad(@NonNull LoadAdError loadAdError) {
                 // Handle the error
                 state_admobinterestial = "Fail";
-                Log.i(TAG, loadAdError.getMessage());
+                Log.i(TAG, "Admob interestial error : " + loadAdError.getMessage());
                 mInterstitialAd = null;
 
                 if (admob_loadAdIdsType == 2) {
@@ -1875,7 +1929,7 @@ public class AppManage {
 
                 @Override
                 public void onBannerLoaded() {
-                    Log.i(TAG, "onBannerLoaded");
+                    Log.i(TAG, "topon onBannerLoaded");
                     banner_container.removeAllViews();
                     banner_container.addView(toponBannerAd_preLoad);
                     preLoadBanner(TopOn);
@@ -1883,7 +1937,7 @@ public class AppManage {
 
                 @Override
                 public void onBannerFailed(com.anythink.core.api.AdError adError) {
-                    Log.i(TAG, "onBannerFailed: " + adError.getFullErrorInfo());
+                    Log.i(TAG, "topon onBannerFailed: " + adError.getFullErrorInfo());
                     banner_container.removeAllViews();
                     nextBannerPlatform(banner_container);
                 }
@@ -2205,14 +2259,14 @@ public class AppManage {
 
                         @Override
                         public void onBannerLoaded() {
-                            Log.i(TAG, "onBannerLoaded");
+                            Log.i(TAG, "topon onBannerLoaded");
                             state_toponBanner = "Loaded";
                             toponBannerAd_preLoad = mBannerView;
                         }
 
                         @Override
                         public void onBannerFailed(com.anythink.core.api.AdError adError) {
-                            Log.i(TAG, "onBannerFailed: " + adError.getFullErrorInfo());
+                            Log.i(TAG, "topon onBannerFailed: " + adError.getFullErrorInfo());
                             state_toponBanner = "Fail";
                         }
 
@@ -2757,7 +2811,8 @@ public class AppManage {
         adView.setStoreView(adView.findViewById(R.id.ad_store));
         adView.setAdvertiserView(adView.findViewById(R.id.ad_advertiser));
 
-        ((TextView) adView.getHeadlineView()).setText(nativeAd.getHeadline());
+        if (nativeAd.getHeadline() != null)
+            ((TextView) adView.getHeadlineView()).setText(nativeAd.getHeadline());
 
         if (nativeAd.getBody() == null) {
             adView.getBodyView().setVisibility(View.INVISIBLE);
@@ -3040,7 +3095,7 @@ public class AppManage {
         atNatives = new ATNative(activity, topon_n, new ATNativeNetworkListener() {
             @Override
             public void onNativeAdLoaded() {
-                Log.i(TAG, "onNativeAdLoaded");
+                Log.i(TAG, "topon onNativeAdLoaded");
                 if (view != null) {
                     view.setVisibility(View.GONE);
                 }
@@ -3049,7 +3104,7 @@ public class AppManage {
 
             @Override
             public void onNativeAdLoadFail(com.anythink.core.api.AdError adError) {
-                Log.i(TAG, "onNativeAdLoadFail, " + adError.getFullErrorInfo());
+                Log.i(TAG, "topon onNativeAdLoadFail, " + adError.getFullErrorInfo());
                 nextNativePlatform(nativeAdContainer, view);
             }
         });
@@ -3711,13 +3766,13 @@ public class AppManage {
         atNatives = new ATNative(activity, topon_n, new ATNativeNetworkListener() {
             @Override
             public void onNativeAdLoaded() {
-                Log.i(TAG, "onNativeAdLoaded");
+                Log.i(TAG, "topon onNativeAdLoaded");
                 nativeAdContainer.setVisibility(View.VISIBLE);
             }
 
             @Override
             public void onNativeAdLoadFail(com.anythink.core.api.AdError adError) {
-                Log.i(TAG, "onNativeAdLoadFail, " + adError.getFullErrorInfo());
+                Log.i(TAG, "topon onNativeAdLoadFail, " + adError.getFullErrorInfo());
                 nextNativePlatform(nativeAdContainer);
             }
         });
@@ -3918,25 +3973,30 @@ public class AppManage {
 
 
         if (admobNativeAd_preLoad == null) {
-            final AdLoader adLoader = new AdLoader.Builder(activity, admob_n).forNativeAd(new NativeAd.OnNativeAdLoadedListener() {
-                @Override
-                public void onNativeAdLoaded(NativeAd nativeAd) {
-                    // Show the ad.
-
-                    inflate_NATIV_ADMOB(nativeAd, nativeAdContainer);
-                }
-            }).withAdListener(new AdListener() {
-                @Override
-                public void onAdFailedToLoad(LoadAdError adError) {
-                    // Handle the failure by logging, altering the UI, and so on.
-
-                    nextNativePlatform(nativeAdContainer);
-                }
-            }).withNativeAdOptions(new NativeAdOptions.Builder()
-                    // Methods in the NativeAdOptions.Builder class can be
-                    // used here to specify individual options settings.
-                    .build()).build();
-            adLoader.loadAd(new AdRequest.Builder().build());
+            //set condition
+//            admob_native_forcefully = 0 - show only if preloaded 1 - show add forcefully even not loaded load & display
+            if (admob_native_forcefully == 1 && !state_admobNative.equalsIgnoreCase("Loading")) {
+                state_admobNative = "Loading";
+                final AdLoader adLoader = new AdLoader.Builder(activity, admob_n).forNativeAd(new NativeAd.OnNativeAdLoadedListener() {
+                    @Override
+                    public void onNativeAdLoaded(NativeAd nativeAd) {
+                        // Show the ad.
+                        state_admobNative = "Loaded";
+                        inflate_NATIV_ADMOB(nativeAd, nativeAdContainer);
+                    }
+                }).withAdListener(new AdListener() {
+                    @Override
+                    public void onAdFailedToLoad(LoadAdError adError) {
+                        // Handle the failure by logging, altering the UI, and so on.
+                        state_admobNative = "Fail";
+                        nextNativePlatform(nativeAdContainer);
+                    }
+                }).withNativeAdOptions(new NativeAdOptions.Builder()
+                        // Methods in the NativeAdOptions.Builder class can be
+                        // used here to specify individual options settings.
+                        .build()).build();
+                adLoader.loadAd(new AdRequest.Builder().build());
+            }
         } else {
             state_admobNative = "Start";
             inflate_NATIV_ADMOB(admobNativeAd_preLoad, nativeAdContainer);
@@ -3982,7 +4042,8 @@ public class AppManage {
         adView.setStoreView(adView.findViewById(R.id.ad_store));
         adView.setAdvertiserView(adView.findViewById(R.id.ad_advertiser));
 
-        ((TextView) adView.getHeadlineView()).setText(nativeAd.getHeadline());
+        if (nativeAd.getHeadline() != null)
+            ((TextView) adView.getHeadlineView()).setText(nativeAd.getHeadline());
         adView.getMediaView().setMediaContent(nativeAd.getMediaContent());
 
         if (nativeAd.getBody() == null) {
@@ -4023,10 +4084,14 @@ public class AppManage {
 
         adView.setNativeAd(nativeAd);
 
-        admobNativeAd_preLoad = null;
+        if ((admob_loadAdIdsType == 0 || admob_loadAdIdsType == 2 || admob_n.equals("random")) && !admob_n.isEmpty()) {
+            admob_n = getRandomPlacementId(ADMOB, "N");
+            preloadAdmobNative(admob_n);
+        }
 
+
+        /*admobNativeAd_preLoad = null;
         if (mysharedpreferences.getInt("appNativePreLoad", 0) == 1 && (state_admobNative.equals("Start")) || state_admobNative.equals("Fail")) {
-
             if ((admob_loadAdIdsType == 0 || admob_loadAdIdsType == 2 || admob_n.equals("random")) && !admob_n.isEmpty()) {
                 admob_n = getRandomPlacementId(ADMOB, "N");
             }
@@ -4052,7 +4117,7 @@ public class AppManage {
 
         } else {
             Log.e("admob_state", "proccess");
-        }
+        }*/
 
     }
 
@@ -4207,7 +4272,7 @@ public class AppManage {
                     @Override
                     public void onAdFailedToLoad(@NonNull LoadAdError loadAdError) {
                         // Handle the error
-                        Log.i(TAG, loadAdError.getMessage());
+                        Log.i(TAG, "admob fail to load : " + loadAdError.getMessage());
                         mInterstitialAd[0] = null;
                         is_callback[0] = false;
 
@@ -4324,7 +4389,7 @@ public class AppManage {
 
                     @Override
                     public void onInterstitialAdLoaded() {
-                        Log.i(TAG, "onInterstitialAdLoaded");
+                        Log.i(TAG, "topon onInterstitialAdLoaded");
 
                         is_callback[0] = false;
                         if (mtoponInterstitialAd.checkAdStatus().isReady()) {
@@ -4336,7 +4401,7 @@ public class AppManage {
 
                     @Override
                     public void onInterstitialAdLoadFail(com.anythink.core.api.AdError adError) {
-                        Log.i(TAG, "onInterstitialAdLoadFail:\n" + adError.getFullErrorInfo());
+                        Log.i(TAG, "topon onInterstitialAdLoadFail:\n" + adError.getFullErrorInfo());
                         is_callback[0] = false;
                         interstitialCallBack();
                     }
@@ -4577,7 +4642,7 @@ public class AppManage {
                     @Override
                     public void onAdFailedToLoad(@NonNull LoadAdError loadAdError) {
                         // Handle the error
-                        Log.i(TAG, loadAdError.getMessage());
+                        Log.i(TAG, "addmob turn interestial : " + loadAdError.getMessage());
                         mInterstitialAd[0] = null;
                         is_callback[0] = false;
                         if (loading_dialog == true) {
@@ -5127,6 +5192,7 @@ public class AppManage {
                 @Override
                 public void onNativeAdLoaded(NativeAd nativeAd) {
                     // Show the ad.
+                    Log.e(TAG, "admob onNativeAdLoaded: ");
                     admobNativeAd_preLoad = nativeAd;
                     state_admobNative = "Loaded";
                 }
@@ -5134,6 +5200,7 @@ public class AppManage {
                 @Override
                 public void onAdFailedToLoad(LoadAdError adError) {
                     // Handle the failure by logging, altering the UI, and so on.
+                    Log.e(TAG, "onAdFailedToLoad:" + adError.getMessage());
                     state_admobNative = "Fail";
                 }
             }).withNativeAdOptions(new NativeAdOptions.Builder()
@@ -5141,8 +5208,6 @@ public class AppManage {
                     // used here to specify individual options settings.
                     .build()).build();
             adLoader.loadAd(new AdRequest.Builder().build());
-
-
         } else {
             Log.e("admob_state", "proccess");
         }

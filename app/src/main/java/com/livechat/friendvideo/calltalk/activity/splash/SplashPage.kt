@@ -6,11 +6,14 @@ import android.util.Log
 import android.view.LayoutInflater
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
-import com.livechat.friendvideo.calltalk.VPN.ConstVpn
 import com.livechat.friendvideo.calltalk.activity.StartScreenActivity
 import com.livechat.friendvideo.calltalk.databinding.ActivitySplashPageBinding
 import com.livechat.friendvideo.calltalk.extras.Constants
 import com.pesonal.adsdk.*
+import com.pesonal.adsdk.vpn.ConstVpn
+import com.pesonal.adsdk.vpn.MyUtils
+import com.pesonal.adsdk.vpn.OnVpnEventCapture
+import com.pesonal.adsdk.vpn.VpnUtilitiys
 import com.preference.PowerPreference
 import org.json.JSONObject
 
@@ -65,7 +68,7 @@ class SplashPage : AppCompatActivity() {
     }
 
     private fun afterAllDataFromAdsSdk() {
-        setupAdsDataToMyPref()
+//        setupAdsDataToMyPref()
         checkVpn()
     }
 

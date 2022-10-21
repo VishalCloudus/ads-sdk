@@ -1,4 +1,4 @@
-package com.livechat.friendvideo.calltalk.activity.splash
+package com.pesonal.adsdk.vpn
 
 import android.app.Activity
 import android.content.BroadcastReceiver
@@ -22,9 +22,6 @@ import com.anchorfree.vpnsdk.callbacks.Callback
 import com.anchorfree.vpnsdk.callbacks.CompletableCallback
 import com.anchorfree.vpnsdk.exceptions.VpnException
 import com.anchorfree.vpnsdk.transporthydra.HydraTransport
-import com.livechat.friendvideo.calltalk.VPN.ConstVpn
-import com.livechat.friendvideo.calltalk.VPN.Countries
-import com.livechat.friendvideo.calltalk.extras.Constants
 import com.northghost.caketube.CaketubeTransport
 import com.pesonal.adsdk.AppPreferenceVpn
 import com.pesonal.adsdk.OnCountryListener
